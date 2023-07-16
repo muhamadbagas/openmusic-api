@@ -12,7 +12,7 @@
   "rules": {
     "no-console": "off",
     "no-underscore-dangle": "off",
-    "no-extraneous-dependencies": "on",
+    "plugins": ["import"],
     "object-curly-newline": "off"
   }
 }
