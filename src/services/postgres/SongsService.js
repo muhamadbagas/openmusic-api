@@ -59,7 +59,7 @@ class SongsService {
       text: 'SELECT id, title, performer FROM songs',
     };
     const result = await this._pool.query(query);
-    return result.rows.map(mapDBToModel);
+    return result;
   }
 
   async getSongById(id) {
