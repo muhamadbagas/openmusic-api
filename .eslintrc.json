@@ -15,6 +15,7 @@
     "plugins": "off",
     "object-curly-newline": "off",
     "import/no-extraneous-dependencies": "off",
-    "camelcase": "off"
+    "camelcase": "off",
+    "newline-per-chained-call": "off"
   }
 }

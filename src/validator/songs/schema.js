@@ -1,6 +1,6 @@
 const Joi = require('joi');
 
-// Mengantisipasi input tahun yang asal-asalan (Terlalu kecil tahunnya atau melewati angka tahun ini)
+// Mengantisipasi input tahun sembarang (Terlalu kecil tahunnya/melewati tahun ini)
 const currentYear = new Date().getFullYear();
 
 const SongPayloadSchema = Joi.object({

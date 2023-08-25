@@ -1,6 +1,6 @@
 const Joi = require('joi');
 
-// Mengantisipasi input tahun yang asal-asalan (Terlalu kecil tahunnya atau melewati angka tahun ini)
+// Mengantisipasi input tahun sembarang (Terlalu kecil tahunnya/melewati tahun ini)
 const currentYear = new Date().getFullYear();
 
 const AlbumPayloadSchema = Joi.object({
@@ -8,4 +8,9 @@ const AlbumPayloadSchema = Joi.object({
   year: Joi.number().integer().min(1800).max(currentYear).required(),
 });
 
-module.exports = { AlbumPayloadSchema };
+const AlbumLikesPayloadSchema = Joi.object({
+  userId: Joi.string().required(),
+  albumId: Joi.string().required(),
+});
+
+module.exports = { AlbumPayloadSchema, AlbumLikesPayloadSchema };

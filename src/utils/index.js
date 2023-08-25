@@ -11,6 +11,7 @@ const mapDBToModel = ({
   owner,
   playlist_id,
   song_id,
+  cover,
 }) => ({
   id,
   name,
@@ -24,6 +25,7 @@ const mapDBToModel = ({
   owner,
   playlistId: playlist_id,
   songId: song_id,
+  cover,
 });
 
 const mapDBToModelPlaylist = (dataFromDB) => {
